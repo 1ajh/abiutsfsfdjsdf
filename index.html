@@ -8,7 +8,9 @@
     :root {
       --bg: #000;
       --text: #fff;
-      --accent: #777;
+      --accent: #d8d8d8;
+      --accent2: #181818;
+      --accent3: #45484c;
     }
 
     * {
@@ -29,8 +31,8 @@
     }
 
     .container {
-      max-width: 600px;
-      transform: translateY(-5em);
+      max-width: 700px;
+      transform: translate(-10em,-5em);
     }
 
     h1 {
@@ -70,7 +72,7 @@
       position: relative;
       display: inline-block;
       cursor: pointer;
-      color: #7289da;
+      color: #819ab3;
       text-decoration: none;
     }
 
@@ -94,12 +96,28 @@
     .tooltip:hover::after {
       opacity: 1;
     }
+
+    .btn {
+      padding: 0.5em 2em;
+      border: solid 2px var(--accent2);
+      border-radius: 0.5em;
+      margin: 0;
+      color: var(--accent);
+    }
+    .btn:hover {
+      border: solid 2px #819ab3;
+    }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>ajh</h1>
-    <p>creative soul building cool stuff on the web</p>
+    <p>making cool stuff on the web <a href="https://github.com/1ajh"
+      class="tooltip" 
+      data-tooltip="@1ajh" 
+      target="_blank">
+      [github]</a>
+  </p>
     <p>reach out at
         
 <a href="mailto:aj@ajh.college"
@@ -116,6 +134,10 @@ or
   target="_blank">
   discord
 </a>
+</p><br>
+<p>
+<a class="btn" href="https://ajh.college">ajh's vault</a>
+<a class="btn" href="https://djajh.bandcamp.com/">bandcamp</a>
 </p>
   </div>
 </body>
